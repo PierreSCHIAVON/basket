@@ -1,8 +1,6 @@
 package com.project.basket.controllers;
 
-import com.project.basket.entity.Participer;
 import com.project.basket.entity.Terrain;
-import com.project.basket.repository.ParticiperRepository;
 import com.project.basket.repository.TerrainRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
