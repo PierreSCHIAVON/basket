@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 @CrossOrigin(origins = "*")
-@RequestMapping("secured/joueur")
+@RequestMapping("joueur")
 @RestController
 public class JoueurController {
     @Autowired

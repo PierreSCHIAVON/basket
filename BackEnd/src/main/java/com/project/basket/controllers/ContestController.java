@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @CrossOrigin(origins = "*")
-@RequestMapping("secured/contest")
+@RequestMapping("contest")
 @RestController
 public class ContestController {
     @Autowired
