@@ -1,7 +1,8 @@
 package com.project.basket.repository;
 
 import com.project.basket.entity.Contest;
+import com.project.basket.entity.Participer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ContestRepository extends JpaRepository<Contest, Long> {
+public interface ParticiperRepository extends JpaRepository <Participer, Long> {
 }

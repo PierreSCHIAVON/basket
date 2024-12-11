@@ -1,4 +1,7 @@
 package com.project.basket.repository;
 
-public interface JoueurRepository {
+import com.project.basket.entity.Joueur;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface JoueurRepository extends JpaRepository<Joueur, Long> {
 }

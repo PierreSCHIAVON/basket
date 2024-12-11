@@ -5,24 +5,26 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import java.time.OffsetDateTime;
 
 @Entity
 @Data
 @Getter
 @Setter
-@Table(name = "contest")
+@Table(name = "joueur")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-
-public class Contest {
+public class Participer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id_contest", nullable = false)
+    @Column(name = "Id_Participer", nullable = false)
+    private Long idParticiper;
+
+    @Column(name = "Id_Terrain", nullable = false)
+    private Long idTerrain;
+
+    @Column(name = "Id_Contest", nullable = false)
     private Long idContest;
-    @Column(name = "heure_debut", nullable = false)
-    private OffsetDateTime heureDebut;
-    @Column(name = "heure_fin")
-    private OffsetDateTime heureFin;
-    @Column(name = "type_evenement", length = 50)
-    private String typeEvenement;
+
+    @Column(name = "Id_Joueur", nullable = false)
+    private Long idJoueur;
+
 }
